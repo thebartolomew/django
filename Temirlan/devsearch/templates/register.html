@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+</head>
+<body>
+  {% include 'navbar.html' %}
+    <form class="login" method="POST" action="{% url 'registerUser' %}">
+      {% csrf_token %}
+        <div class="main"></div>
+            <div class="header">
+                <h1 style="color: #464646;">Welcome <br> <span style="color: #F6BE51;">To</span> Our <span style="color: #F6BE51;">Website</span></h1>
+            </div>
+            <div class="form">
+                <h2>Welcome!</h2>
+               
+                    {% for field in form %}
+                    <div class="input-form">
+                      {{field}}
+                    </div>
+                    {% endfor %}
+              
+               
+                <div class="input-form-submit">
+                    <input type="submit" value="Register">
+                    <div class="message">
+                      {% if messages %}
+                        {% for message in messages %}
+                          <p{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</p>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+</body>
+<script src="{% static 'js/placeholder.js' %}"></script>
+</html>

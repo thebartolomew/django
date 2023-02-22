@@ -1,0 +1,9 @@
+#navbar_a{
+    color: grey;
+    font-size: 60px ;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+}

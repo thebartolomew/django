@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+    
+}
+
+body, html {
+	font-family: Inter, sans-serif;
+}
+
+.login{
+    
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #fff;
+    max-width: 1920px;
+    padding: 9.9% 0;
+    
+    
+}
+.header{
+    position: relative;
+    padding: 6% 0;
+}
+
+h1{
+    font-size: 100px;
+    max-width: 752px;
+    letter-spacing: 3px;
+    
+}
+
+.loginWithEmail{
+    flex-direction: row;
+}
+
+.form{
+    padding-left: 10%;
+    position: relative;
+}
+
+.form h2{
+    margin: 30px 100px;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.input-form{
+    margin: 15px 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.title {
+    padding: 5% 0 ;
+    overflow: hidden;
+    text-align: center;
+    
+    
+}
+.title span {
+   
+    display: inline-block;
+    vertical-align: middle;
+}
+.title:before,
+.title:after {
+    
+    content: "";
+    
+    display: inline-block;
+    vertical-align: middle;
+    
+    width: 90px;
+    height: 1px;
+   
+    background-color: black;
+    
+    position: relative;
+}
+.title:before {
+   
+    margin-left: -100%;
+
+    left: -14px;
+}
+.title:after {
+    
+    margin-right: -100%;
+  
+    right: -14px;
+}
+
+.input-form input{
+    padding: 10px;
+    padding-left: 20px;
+    width: 400px;
+    color: black;
+    font-size: 14px;
+    background-color: none;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid black;
+    
+}
+
+.input-form input:focus, .input-form input:focus{
+    border: 1px solid black;
+}
+
+.input-form-submit input[type="submit"]{
+    margin-top: 50px;
+    padding: 10px;
+    width: 230px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+    margin-left: 30%;
+}
+.input-form-submit input[type="submit"]:hover{
+    background-color: rgb(73, 71, 71);
+    cursor: pointer;
+    transition: 0.2s ease-in-out 0.2s;
+}
+
+.forgotPassword{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: small;
+    font-weight: lighter;
+    
+}
+._password{
+    color: black;
+    
+}
+
+
+@media  only screen and (max-width: 1200px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .form{
+        padding-left: 0;
+    }
+    .input-form-submit input[type="submit"]{
+        margin-left: 27%;
+    }
+   
+}
+
+
+
+
+@media  only screen and (max-width: 800px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .header{
+        display: none;
+    }
+    .title {
+        padding: 5% 0 ;
+        overflow: hidden;
+        text-align: center;
+    }
+    .input-form-submit input[type="submit"]{
+        margin-left: 27%;
+    }
+}
+
+@media  only screen and (max-width: 500px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .header{
+        display: none;
+    }
+    .title {
+        padding: 5% 0 ;
+        overflow: hidden;
+        text-align: center;
+    }
+    .input-form-submit input[type="submit"]{
+        margin-left: 24%;
+    }
+}
+
+@media  only screen and (max-width: 400px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .header{
+        display: none;
+    }
+    .title {
+        padding: 5% 0 ;
+        overflow: hidden;
+        text-align: center;
+        margin-left: 12%;
+    }
+    .input-form-submit input[type="submit"]{
+        margin-left: 24%;
+    }
+    .form{
+        max-width: 350px;
+        margin-left: -10%;
+    }
+    .input-form input{
+        width: 320px;
+        
+    }
+    .forgotPassword{
+        padding-left: 10%;
+    }
+    .form h2{
+        margin-left: 21%;
+        margin-right: 8%;
+    }
+    .input-form-submit input[type="submit"]:active{
+        background-color: rgb(54, 54, 54);
+        transition: 0.15s;
+    }
+}
+
+
+
+/* Main page */
+._main{
+    border-radius: 50px;
+    padding-top: 1%;
+    
+}
+
+._header{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4%;
+    
+}
+
+._logo{
+    margin-top: -2%;
+}
+
+.input-form input{
+    background: url(../icons/Group\ 5.svg);
+    background-size: 2%;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 12px;
+    text-indent: 15px;
+    
+}
+
+#__search{
+    width: 800px;
+    border-radius: 14px;
+    
+}
+
+.menu{
+    margin-top: 1.3%;
+
+}
+.menu:hover{
+    cursor: pointer;
+
+}
+
+.navigation{
+    max-width: 1250px;
+    margin-left: 8.6%;
+    margin-top: 5%;
+    padding: 25px 80px;
+    background-color: #F6BE51;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 600;    
+
+    
+}
+.nav_ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.list_main{
+    list-style-type: none;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+.upperShopsLine{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.textShops{
+    margin-top: 10%;
+    font-weight: bold;
+    font-size: 20px;
+}
+.food{
+    margin-left: 17%;
+}
+.flowers1{
+    margin-left: 36%;
+}
+.pharmacy1{
+    margin-left: 36%;
+}
+
+.lowerShopsLine{
+    margin-left: 3%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.markets1{
+    margin-left: 17%;
+}
+
+.forkids1{
+    margin-left: 29%;
+}
+
+.footer{
+    display: flex;
+    margin-top: 10%;
+    padding: 3% 0;
+    align-items: flex-end;
+    background-color: #454444;
+    color: #fff;
+    border-radius: 20px;
+    justify-content: space-around;
+    
+}
+
+.footerList{
+    list-style-type: none;
+    padding: 5% 0;
+}
+
+.footerList:hover{
+    cursor: pointer;
+}
+.appStore{
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+._Appstore{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imageApp{
+    margin-right: 20px;
+}
+
+.GooglePlay{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 15px 30px;
+}
+.imageGoogle{
+    margin-top: 10px;
+}
+
+.appStore:hover{
+    cursor: pointer;
+    background-color: #5e5c5c;
+    transition: 00.2s;
+}
+.GooglePlay:hover{
+    cursor: pointer;
+    background-color: #5e5c5c;
+    transition: 00.2s;
+}
+
+img{
+    width: 200px;
+    border-radius: 200px;
+}
+
+form {
+    background-color: white;}
+
+.message {
+        color: red;
+        font-style: italic;
+        font-size: 20px;
+     
+       
+    }
+
+    
