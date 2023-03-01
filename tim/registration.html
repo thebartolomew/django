@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+</head>
+<body>
+    {% include 'navbar.html' %}
+    
+    <div class="login">
+        {% csrf_token %}
+            <div class="form">
+                <h2>Регистрация</h2>
+                <div class="input-name"><img src="Vector.svg"><h4>Login</h4></div>
+                {% for field in form %}
+                <div class="input-form">
+                    <input type="text" placeholder="Login">
+                </div>
+                <div class="input-name"><img src="pass.svg"><h4>Create password</h4></div>
+                <div class="input-form">
+                    <input type="password" placeholder="Create password">
+                    {{field}}
+                </div>
+                {% endfor %}
+                <div class="input-name"><img src="pass.svg"><h4>Submit password</h4></div>
+                <div class="input-form">
+                    <input type="password" placeholder="Submit password">
+                </div>
+                <div class="message">
+                    {% if messages %}-->
+                      {% for message in messages %}-->
+                        <p{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</p>-->
+                      {% endfor %}
+                     {% endif %}
+                <div class="input-form-submit">
+                    <input type="submit" value="REGISTRATE">
+                </div>
+
+                <hr style="margin-top:5%;margin-left:8%; color: black; width: 450px;">
+
+                <div style="margin-top: 5%; margin-left: 35%"><p>Войти с помощью</p></div>
+
+                <div class="icons">
+                    <img src="icons8-facebook.svg">
+                    <img src="icons8-apple-logo.svg">
+                    <img src="icons8-google.svg">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
