@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+    background-color: #2D2D2D;
+    
+}
+
+body, html {
+	font-family: Inter, sans-serif;
+}
+
+.login{
+    margin: 5% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #fff;
+    max-width: 500px;
+    padding: 4% 0;
+    
+    
+}
+
+
+h1{
+    font-size: 100px;
+    max-width: 752px;
+    letter-spacing: 3px;
+    
+}
+
+.loginWithEmail{
+    flex-direction: row;
+}
+
+
+.form h2{
+    margin: 30px 100px;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.input-form{
+    margin: 15px 70px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.title {
+    padding: 5% 0 ;
+    overflow: hidden;
+    text-align: center;
+    
+    
+}
+.title span {
+   
+    display: inline-block;
+    vertical-align: middle;
+}
+.title:before,
+.title:after {
+    
+    content: "";
+    
+    display: inline-block;
+    vertical-align: middle;
+    
+    width: 90px;
+    height: 1px;
+   
+    background-color: black;
+    
+    position: relative;
+}
+.title:before {
+   
+    margin-left: -100%;
+
+    left: -14px;
+}
+.title:after {
+    
+    margin-right: -100%;
+  
+    right: -14px;
+}
+
+.input-form input{
+    padding: 10px;
+    padding-left: 20px;
+    width: 400px;
+    color: black;
+    font-size: 14px;
+    background-color: none;
+    box-sizing: border-box;
+    border: none;
+    border-bottom:1px solid #454444;
+}
+
+.input-form input:focus, .input-form input:focus{
+    border: none;
+    outline: none;
+    border-bottom:1px solid #454444;
+}
+
+.input-form-submit input[type="submit"]{
+    margin-top: 30px;
+    padding: 10px;
+    width: 230px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+    margin-left: 27%;
+}
+.input-form-submit input[type="submit"]:hover{
+    background-color: rgb(73, 71, 71);
+    cursor: pointer;
+    transition: 0.1s;
+}
+.input-name{
+    display: flex;
+
+   margin-left: 15%;
+}
+.input-name img{
+    width: 15px;
+    margin-right: 1%;
+}
+
+
+.icons{
+    max-width: 300px;
+    margin-top: 5%;
+    margin-left: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icons img{
+    width: 50px;
+}
+.icons img:hover{
+    cursor: pointer;
+}
+
+.forgotPassword{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: small;
+    font-weight: lighter;
+    
+}
+._password{
+    color: black;
+    
+}
+
+
+@media  only screen and (max-width: 1200px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .form{
+        padding-left: 0;
+    }
+    .input-form-submit input[type="submit"]{
+        margin-left: 27%;
+    }
+   
+}
+
+
+
+
+@media  only screen and (max-width: 800px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .header{
+        display: none;
+    }
+    .title {
+        padding: 5% 0 ;
+        overflow: hidden;
+        text-align: center;
+    }
+    .input-form-submit input[type="submit"]{
+        margin-left: 27%;
+    }
+}
+
+@media  only screen and (max-width: 500px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .header{
+        display: none;
+    }
+    .title {
+        padding: 5% 0 ;
+        overflow: hidden;
+        text-align: center;
+    }
+    .input-form-submit input[type="submit"]{
+        margin-left: 24%;
+    }
+}
+
+@media  only screen and (max-width: 400px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .header{
+        display: none;
+    }
+    .title {
+        padding: 5% 0 ;
+        overflow: hidden;
+        text-align: center;
+        margin-left: 12%;
+    }
+    .input-form-submit input[type="submit"]{
+        margin-left: 24%;
+    }
+    .form{
+        max-width: 350px;
+        margin-left: -10%;
+    }
+    .input-form input{
+        width: 320px;
+        
+    }
+    .forgotPassword{
+        padding-left: 10%;
+    }
+    .form h2{
+        margin-left: 21%;
+        margin-right: 8%;
+    }
+    .input-form-submit input[type="submit"]:active{
+        background-color: rgb(54, 54, 54);
+        transition: 0.15s;
+    }
+}
+
+
+
+/* Main page */
+._main{
+    border-radius: 50px;
+    padding-top: 1%;
+    
+}
+
+._header{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4%;
+    
+}
+
+._logo{
+    margin-top: -2%;
+}
+
+.input-form input{
+    background: url(../icons/Group\ 5.svg);
+    background-size: 2%;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 12px;
+    text-indent: 15px;
+    
+}
+
+#__search{
+    width: 800px;
+    border-radius: 14px;
+    
+}
+
+.menu{
+    margin-top: 1.3%;
+
+}
+.menu:hover{
+    cursor: pointer;
+
+}
+
+.navigation{
+    max-width: 1250px;
+    margin-left: 8.6%;
+    margin-top: 5%;
+    padding: 25px 80px;
+    background-color: #F6BE51;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 600;    
+
+    
+}
+.nav_ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.list_main{
+    list-style-type: none;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+.upperShopsLine{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.textShops{
+    margin-top: 10%;
+    font-weight: bold;
+    font-size: 20px;
+}
+.food{
+    margin-left: 17%;
+}
+.flowers1{
+    margin-left: 36%;
+}
+.pharmacy1{
+    margin-left: 36%;
+}
+
+.lowerShopsLine{
+    margin-left: 3%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.markets1{
+    margin-left: 17%;
+}
+
+.forkids1{
+    margin-left: 29%;
+}
+
+.footer{
+    display: flex;
+    margin-top: 10%;
+    padding: 3% 0;
+    align-items: flex-end;
+    background-color: #454444;
+    color: #fff;
+    border-radius: 20px;
+    justify-content: space-around;
+    
+}
+
+.footerList{
+    list-style-type: none;
+    padding: 5% 0;
+}
+
+.footerList:hover{
+    cursor: pointer;
+}
+.appStore{
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+._Appstore{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imageApp{
+    margin-right: 20px;
+}
+
+.GooglePlay{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 15px 30px;
+}
+.imageGoogle{
+    margin-top: 10px;
+}
+
+.appStore:hover{
+    cursor: pointer;
+    background-color: #5e5c5c;
+    transition: 00.2s;
+}
+.GooglePlay:hover{
+    cursor: pointer;
+    background-color: #5e5c5c;
+    transition: 00.2s;
+}
+
+img{
+    width: 200px;
+    border-radius: 200px;
+}
+
+form {
+    background-color: white;}
+
+.message {
+        color: red;
+        font-style: italic;
+        font-size: 20px;
+     
+       
+    }
+
+
+.header{
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #000000;
+}
+.logo-header, .search-bar, .buttons-header{
+    margin-top: 1%;
+    
+}
+
+#search{
+    width: 450px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+.buttons-header{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo{
+    width: 35px;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+
+.links{
+    width: 1000px;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.main-link{
+    font-weight: bold;
+}
+
+.type {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    
+    border-radius: 8px;
+    
+  }
+  
+.type h3 {
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    background-color: #00000040;
+    color: aliceblue;
+    bottom: -70px;
+    font-weight: 250;
+    font-size: 20px;
+  }
+
