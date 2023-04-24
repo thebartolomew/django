@@ -10,7 +10,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: Inter;
-    background-color: #2D2D2D;
+    background-color: #fff;
     
 }
 
@@ -525,3 +525,102 @@ form {
     width: 339px;
    
 }
+
+
+._category_{
+    margin-top: 5%;
+    color: #fff;
+    
+
+}
+._category_ a{
+    color: #000;
+}
+
+
+.guitars{
+    color: fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.guitar-one{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.order-guitar{
+    margin-left: 80px;
+    color: #000;
+}
+
+.order-guitar p{
+    margin-top: 70px;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.order-guitar button{
+    padding: 10px;
+    padding: 10px 35px 10px 35px;
+    border-radius: 100px;
+    border: none;
+    background-color: red;
+    color: #fff;
+    font-weight: bold;
+    font-size: large;
+    margin-left: 100px;
+}
+.order-guitar img{
+    width: 25px;
+    margin-left: 20px;
+}
+
+hr{
+    margin: 30px;
+}
+
+footer{ 
+    margin-top: 10%;
+    height: 50%; 
+    background-color: black; 
+    flex-direction: column; 
+    display: flex; 
+ 
+  } 
+   
+.footer-div{ 
+      display: flex; 
+      justify-content: space-around; 
+      color: white; 
+      flex: 1 1 auto; 
+  } 
+a{ 
+      color:white; 
+      text-decoration: none; 
+   
+  } 
+a::visited{ 
+      color:white; 
+  } 
+   
+ul li{ 
+    padding-bottom:10px ; 
+      list-style-type: none; 
+  } 
+.imgs{ 
+      display: flex; 
+      justify-content: center; 
+  } 
+.footer-col{ 
+    padding: 20px; 
+  } 
+.row{ 
+    padding-top: 126px; 
+    display: flex; 
+    justify-content: space-around; 
+ 
+  }
