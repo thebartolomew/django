@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.container{
+    width: 100%;
+    max-width: 1296px;
+    margin: 0 auto;
+}
+
+.header{
+    padding: 40px 0;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-list{
+    display: flex;
+    column-gap: 30px;
+}
+
+.header-title{
+    color: #3D348B;
+
+}
+
+.header-list-item{
+    font-family: PT Sans;
+    color: #333333;
+
+}
+
+
+.header-lang{
+    font-family: PT Sans;
+    font-weight: 700;
+    color: #333333;
+}
+
+.home-content{
+    display: flex;
+    align-items: center;
+}
+
+.home-content-left{
+    width: 50%;
+}
+
+.home-content-right{
+    width: 50%;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.home-content-box{
+    width: calc((100% - 24px)/2);
+    border-radius: 20px;
+    background: #5DB7DE;
+    padding: 30px 35px;
+
+}
+
+.home-content-box-type, .services-content-box-type{
+    color: white;
+    font-family: PT Sans;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    margin-bottom: 118px;
+}
+.home-content-box-title, .services-content-box-title{
+    color: white;
+    font-family: PT Sans;
+    font-size: 19px;
+    line-height: 140%;
+}
+
+.home-title{
+    color: white;
+
+    font-family: PT Sans;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 70px */
+}
+
+.home-desc{
+    color: white;
+    font-family: PT Sans;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    margin: 40px 0 64px ;
+}
+
+.home-link{
+    color: white;
+    font-family: PT Sans;
+    font-weight: 700;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+
+.home{
+    background: url("./homebg.png") center/cover no-repeat;
+    padding: 113px 0;
+}
+
+.services-content{
+    display: flex;
+
+}
+
+.services-content-left{
+    width: 35%;
+}
+.services-content-right{
+    width: 65%;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.services{
+    padding: 150px 0;
+}
+
+
+.services-content-box{
+    width: calc((100% - 24px)/2);
+    border-radius: 20px;
+    background: #3D348B;
+    padding: 30px 35px;
+}
+
+
+
+
+
