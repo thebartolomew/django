@@ -1,0 +1,385 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.container{
+    width: 100%;
+    max-width: 1296px;
+    margin: 0 auto;
+}
+
+.header{
+    padding: 40px 0;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-list{
+    display: flex;
+    column-gap: 30px;
+}
+
+.header-title{
+    color: #3D348B;
+
+}
+
+.header-list-item{
+    font-family: PT Sans;
+    color: #333333;
+
+}
+
+
+.header-lang{
+    font-family: PT Sans;
+    font-weight: 700;
+    color: #333333;
+}
+
+.home-content{
+    display: flex;
+    align-items: center;
+}
+
+.home-content-left{
+    width: 50%;
+}
+
+.home-content-right{
+    width: 50%;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.home-content-box{
+    width: calc((100% - 24px)/2);
+    border-radius: 20px;
+    background: #5DB7DE;
+    padding: 30px 35px;
+
+}
+
+.home-content-box-type, .services-content-box-type{
+    color: white;
+    font-family: PT Sans;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    margin-bottom: 118px;
+}
+.home-content-box-title, .services-content-box-title{
+    color: white;
+    font-family: PT Sans;
+    font-size: 19px;
+    line-height: 140%;
+}
+
+.home-title{
+    color: white;
+
+    font-family: PT Sans;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 70px */
+}
+
+.home-desc{
+    color: white;
+    font-family: PT Sans;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    margin: 40px 0 64px ;
+}
+
+.home-link{
+    color: white;
+    font-family: PT Sans;
+    font-weight: 700;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+
+.home{
+    background: url("./homebg.png") center/cover no-repeat;
+    padding: 113px 0;
+}
+
+.services-content{
+    display: flex;
+
+}
+
+.services-content-left{
+    width: 35%;
+}
+.services-content-right{
+    width: 65%;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.services{
+    padding: 150px 0;
+}
+
+
+.services-content-box{
+    width: calc((100% - 24px)/2);
+    border-radius: 20px;
+    background: #3D348B;
+    padding: 30px 35px;
+}
+
+
+.services-title{
+    color: #333333;
+    font-family: PT Sans;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 140%; /* 56px */
+    margin-bottom: 60px;
+}
+
+.services-item{
+    color: #3D348B;
+    font-family: PT Sans;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+}
+
+
+.second-item{
+    margin: 31px 0;
+}
+
+
+.about-content{
+    display: flex;
+}
+
+.about-content-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    column-gap: 30px;
+}
+
+.about-content-right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.about-pic-box{
+    height: 350px;
+    border-radius: 20px;
+    background: linear-gradient(0deg, rgba(61, 52, 139, 0.50) 0%, rgba(61, 52, 139, 0.50) 100%),url(./aboutboxbg.png), center/cover no-repeat;
+}
+
+.about-content-box, .about-pic-box{
+    width: 526px;
+}
+
+.about-content-box{
+    color: white;
+    padding: 30px 35px;
+    border-radius: 20px;
+    background: #5DB7DE;
+}
+
+
+.about-content-box-title{
+    color: white;
+    font-family: PT Sans;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 140%; /* 26.6px */
+
+}
+
+.about-content-box-type{
+    color: white;
+    font-family: PT Sans;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    margin-bottom: 38px;
+
+}
+
+.about-title{
+    margin-bottom: 60px;
+    color: #333;
+    font-family: PT Sans;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 140%; /* 56px */
+}
+
+.about-list-item{
+    list-style-type: disc;
+    margin: 11px 0;
+}
+
+
+
+.mid-item{
+    margin: 16px 0;
+}
+
+
+
+.news{
+    padding: 150px 0;
+}
+
+.news-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-title-text{
+    color: #333;
+    font-family: PT Sans;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 140%; /* 56px */
+}
+.news-title-link{
+    color: #3D348B;
+    font-family: PT Sans;
+    font-weight: 700;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+
+.news-content{
+    margin-top: 60px;
+    display: flex;
+    gap: 24px;
+
+}
+
+.news-content-image{
+    border-radius: 20px;
+    width: 100%;
+    height: 214px;
+
+}
+
+.news-content-box{
+    width: calc((100% - 24px)/4);
+    flex-wrap: wrap;
+}
+
+.news-content-box-text{
+    padding: 25px 15px 0;
+}
+.news-content-box-title{
+    color: #333;
+    font-family: PT Sans;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 140%; /* 26.6px */
+    margin: 15px 0 12px;
+}
+
+.news-content-box-date{
+    color: #333;
+    font-family: PT Sans;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 140%; /* 18.2px */
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+
+
+.footer-header{
+    background: #5D3FD3;
+    padding: 40px 0;
+}
+
+.footer-header-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-header-address{
+    color:#FFF;
+    font-family: PT Sans;
+    font-weight: 700;
+    line-height: 140%; /* 22.4px */
+}
+
+
+.footer-header-title{
+    color: white;
+}
+
+.footer-header-contacts{
+    display: flex;
+    gap: 30px;
+    color: #FFF;
+    font-family: PT Sans;
+    font-weight: 700;
+    line-height: 140%; /* 22.4px */
+}
+
+
+
+
+
+.footer-info{
+    background: #3D348B;
+    padding: 80px 312px;
+}
+
+
+
+.footer-info-block{
+    display: flex;
+    gap: 24px;
+}
+
+.footer-info-box{
+    width: calc((100% - 24px) / 4);
+    text-align: start;
+}
+
+
+.footer-info-box-title{
+    color: #fff;
+    font-family: PT Sans;
+    font-weight: 700;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.footer-info-list-item{
+    margin: 15px 0;
+    color: #FFF;
+    font-family: PT Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+}
